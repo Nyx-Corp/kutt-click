@@ -6,7 +6,6 @@ services:
        - /usr/share/coolify/services/kutt-click/db:/bridgeitclick/db
        - custom:/kutt/custom
     environment:
-      DB_FILENAME: "/var/lib/kutt/data"
       SITE_NAME: "BridgeIt Click"
       DEFAULT_DOMAIN: "click.bridgeit-app.fr"
       JWT_SECRET: "your_jwt_secret_here"
