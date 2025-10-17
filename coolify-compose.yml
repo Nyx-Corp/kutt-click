@@ -3,10 +3,10 @@ services:
     build:
       context: .
     volumes:
-       - /usr/share/coolify/services/kutt-click/db:/var/lib/kutt
+       - /usr/share/coolify/services/kutt-click/db/data:/var/lib/kutt/data
        - custom:/kutt/custom
     environment:
-      DB_FILENAME: "/var/lib/kutt/data.sqlite"
+      DB_FILENAME: "/var/lib/kutt/data"
       SITE_NAME: "BridgeIt Click"
       DEFAULT_DOMAIN: "click.bridgeit-app.fr"
       JWT_SECRET: "your_jwt_secret_here"
