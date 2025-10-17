@@ -3,7 +3,7 @@ services:
     build:
       context: .
     volumes:
-       - /usr/share/coolify/services/kutt-click/db/data:/var/lib/kutt/data
+       - /usr/share/coolify/services/kutt-click/db:/bridgeitclick/db
        - custom:/kutt/custom
     environment:
       DB_FILENAME: "/var/lib/kutt/data"
